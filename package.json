@@ -4,7 +4,9 @@
   "description": "Debug utils for react components.",
   "sideEffects": false,
   "scripts": {
-    "build": "babel src --out-dir lib"
+    "prebuild": "rimraf lib",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
@@ -22,7 +24,8 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "react": "16.8.4"
+    "react": "16.8.4",
+    "rimraf": "^2.6.3"
   },
   "peerDependencies": {
     "react": ">15"
