@@ -1,5 +1,5 @@
 # @morosystems/react-debug
-Debug utils for react components
+Debug utils for react components. Intended for development only, not for production
 
 ## debug HOC
 
