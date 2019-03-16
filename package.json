@@ -1,6 +1,6 @@
 {
   "name": "@morosystems/react-debug",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Debug utils for react components.",
   "sideEffects": false,
   "scripts": {
@@ -13,6 +13,11 @@
     "debug",
     "hoc"
   ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/morosystems/react-debug.git"
@@ -20,6 +25,7 @@
   "author": "Morosystems <info@morosystems.cz>",
   "license": "MIT",
   "main": "lib/index.js",
+
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
