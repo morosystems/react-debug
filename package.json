@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Debug utils for react components.",
   "sideEffects": false,
-  "scripts": {},
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
   "keywords": [
     "react",
     "debug",
@@ -15,24 +17,14 @@
   },
   "author": "Morosystems <info@morosystems.cz>",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "react": "16.8.4"
   },
   "peerDependencies": {
     "react": ">15"
-  },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-standard-pkg"
-      ],
-      [
-        "@pika/plugin-build-node"
-      ],
-      [
-        "@pika/plugin-build-web"
-      ]
-    ]
   }
 }
