@@ -1,0 +1,38 @@
+{
+  "name": "@morosystems/react-debug",
+  "version": "0.0.1",
+  "description": "Debug utils for react components.",
+  "sideEffects": false,
+  "scripts": {},
+  "keywords": [
+    "react",
+    "debug",
+    "hoc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morosystems/react-debug.git"
+  },
+  "author": "Morosystems <info@morosystems.cz>",
+  "license": "MIT",
+  "main": "src/index.js",
+  "devDependencies": {
+    "react": "16.8.4"
+  },
+  "peerDependencies": {
+    "react": ">15"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  }
+}
