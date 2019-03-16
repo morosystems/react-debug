@@ -1,4 +1,4 @@
-# react-debug
+# @morosystems/react-debug
 Debug utils for react components
 
 ## debug HOC
