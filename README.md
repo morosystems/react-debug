@@ -24,6 +24,17 @@ Displayed information can be changed using the configuration object, e.g.:
 export default debug({name: 'Test'})(MyComponent);
 ```
 
+### Alternative import
+In order to not importing component all the time, you can import `@morosystems/react-debug/lib/patch` just once, in your main file,
+then use `debug()` directly from global namespace. You can also safely forget about removing this import for production,
+since it will inject `debug()` only when NODE_ENV is `development`
+
+```
+import "@morosystems/react-debug/lib/patch";
+...
+export default debug()(MyComponent);
+```
+
 ### Component name
 You can specify name that is logged using the `name` property. You can specify:
 1. String.
