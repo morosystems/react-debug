@@ -6,7 +6,10 @@
   "scripts": {
     "prebuild": "rimraf lib",
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "npm run test:base -- --reporter spec",
+    "test:watch": "npm run test:base -- --reporter min --watch",
+    "test:base": "mocha --require @babel/register -r esm testSetup.js \"test/**/*.spec.js\""
   },
   "keywords": [
     "react",
@@ -25,13 +28,25 @@
   "author": "Morosystems <info@morosystems.cz>",
   "license": "MIT",
   "main": "lib/index.js",
-
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.4.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.4.0",
+    "chai": "4.2.0",
+    "chai-enzyme": "1.0.0-beta.1",
+    "dirty-chai": "2.0.1",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.11.2",
+    "esm": "3.2.18",
+    "jsdom": "14.0.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "6.0.2",
     "react": "16.8.4",
-    "rimraf": "^2.6.3"
+    "react-dom": "16.8.4",
+    "rimraf": "2.6.3",
+    "sinon": "7.3.0",
+    "sinon-chai": "3.3.0"
   },
   "peerDependencies": {
     "react": ">15"
