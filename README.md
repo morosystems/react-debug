@@ -1,6 +1,10 @@
 # @morosystems/react-debug
 Debug utils for react components. Intended for development only, not for production
 
+```
+npm install -D @morosystems/react-debug
+```
+
 ## debug HOC
 
 Lets you see in console when component mounts, unmounts, updates and why it updated:
@@ -30,7 +34,7 @@ then use `debug()` directly from global namespace. You can also safely forget ab
 since it will inject `debug()` only when NODE_ENV is `development`
 
 ```
-import "@morosystems/react-debug/lib/patch";
+import "@morosystems/react-debug/lib/patch"; // eslint-disable-line import/no-extraneous-dependencies, removed in production
 ...
 export default debug()(MyComponent);
 ```
