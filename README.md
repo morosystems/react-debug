@@ -1,4 +1,7 @@
-# @morosystems/react-debug
+# @morosystems/react-debug DEPRECATED
+## Important 
+This repo is no longer maintained. Component was moved to internal repo react-boilerplate.
+## Description
 Debug utils for react components. Intended for development only, not for production
 
 ```
